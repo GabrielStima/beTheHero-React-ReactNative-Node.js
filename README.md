@@ -34,7 +34,7 @@ From here there are two ways to follow:
 
 1º - Use on your computer;
 
-2º - Use for the demo;
+2º - Use demo;
 
 ### Case 1º
 
