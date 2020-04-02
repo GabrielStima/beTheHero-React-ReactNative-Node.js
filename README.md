@@ -33,9 +33,10 @@ NOTE: Developing this entire application was a new experience, since my notions 
 From here there are two ways to follow:
 
 1º - Use on your computer;
-2º - Use for the demo;
 
-### Caso 1º
+2º - Use demo;
+
+### Case 1º
 
 In this case you must clone the repository, which will contain the 3 projects, if you do not have **node.js** installed on your machine [Click here](<[https://nodejs.org/en/](https://nodejs.org/en/)>), done that open in the terminal inside the folder **backend** and type `npm install` and after finishing installing the dependencies type `npm start` so a server running on the **_http://localhost:3333_**. At that moment you can minimize this terminal because it must be running so that the other projects work 100%.
 
@@ -47,6 +48,6 @@ browser with a QR Code at the bottom of the screen. Above it will be a URL **exp
 Now go on your cell phone and enter his store, search for **Expo** and download it.
 After installation open it at the top of the app you will have the option **scan QR Code**, clicking on this option will open your camera then point it to the QR Code of the screen that had been opened by the program and the application will work In your cellphone. It will have a list with **infinite scroll**, that is, as you scroll down the list it will search for more cases if there are and you can enter those cases and send a message by E-mail or WhatsApp to NGO owner of the case.
 
-### Caso 2º
+### Case 2º
 
 In the process of completion.
