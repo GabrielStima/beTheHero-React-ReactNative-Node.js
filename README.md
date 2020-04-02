@@ -33,6 +33,7 @@ NOTE: Developing this entire application was a new experience, since my notions 
 From here there are two ways to follow:
 
 1º - Use on your computer;
+
 2º - Use for the demo;
 
 ### Case 1º
