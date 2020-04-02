@@ -17,8 +17,12 @@ describe('ONG', () => {
             city:	"Porto Alegre",
             uf: "RS"
         })
-
         expect(response.body).toHaveProperty('id');
         expect(response.body.id).toHaveLength(8);
+    })
+    it('should return a array', async () => {
+        const response = await request(app).get('/ongs')
+
+        expect(Array.isArray(response.body)).toBeTruthy();
     })
 })

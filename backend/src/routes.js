@@ -31,15 +31,30 @@ routes.post('/ongs', celebrate({
     })
 }), OngController.create)
 
-routes.post('/incidents', IncidentController.create)
-routes.post('/sessions', SessionController.create)
+routes.post('/incidents', celebrate({
+    [Segments.HEADERS]: Joi.object({
+        authorization: Joi.string().required()
+    }).unknown(),
+    [Segments.BODY]: Joi.object().keys({
+        title: Joi.string().required(),
+        description: Joi.string().required(),
+        value: Joi.number().required(),
+    })
+}),IncidentController.create)
+
+routes.post('/sessions', celebrate({
+    [Segments.BODY]: Joi.object().keys({
+        id: Joi.string().required(),
+    })
+}), SessionController.create)
 
 routes.delete('/incidents/:id', celebrate({
     [Segments.PARAMS]: Joi.object().keys({
         id: Joi.number().required()
-    })
+    }),
+    [Segments.HEADERS]: Joi.object({
+        authorization: Joi.string().required()
+    }).unknown(),
 }) ,IncidentController.delete)
-
-routes.delete('/sessions', SessionController.delete)
 
 module.exports = routes;
